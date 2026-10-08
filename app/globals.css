@@ -1,26 +1,135 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  font-family: var(--font-manrope), sans-serif;
+  font-synthesis: none;
+  background: #efdce1;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-width: 320px;
+  background-color: #efdce1;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.display-font {
+  font-family: var(--font-cormorant), serif;
+  font-weight: 400;
+}
+
+.nav-link {
+  font-family: var(--font-cormorant), serif;
+  color: #98596c;
+  font-size: 1.25rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: opacity 180ms ease;
+}
+
+.nav-link:hover {
+  opacity: 0.62;
+}
+
+.pill-link {
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.35rem;
+  background: #98596c;
+  color: #ffffff;
+  font-family: var(--font-cormorant), serif;
+  font-size: 1.12rem;
+  line-height: 1;
+  padding: 0.16rem 0.9rem 0.26rem;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.pill-link:hover {
+  background: #7e4557;
+  transform: translateY(-1px);
+}
+
+.pill-link:focus-visible,
+.nav-link:focus-visible,
+.carousel-control:focus-visible,
+.form-field:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
+.carousel-control {
+  cursor: pointer;
+  border: 0;
+  border-bottom: 1px solid #98596c;
+  background: transparent;
+  color: #98596c;
+  font-family: var(--font-cormorant), serif;
+  font-size: 1.15rem;
+  padding: 0 0 0.15rem;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #98596c;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.form-field {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(152 89 108 / 55%);
+  border-radius: 0;
+  background: transparent;
+  color: #ffffff;
+  font-family: var(--font-cormorant), sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: normal;
+  padding: 0.55rem 0;
+  text-transform: none;
+}
+
+.form-field::placeholder {
+  color: rgb(255 255 255 / 65%);
+}
+
+.map-mock {
+  background-color: #ead0d6;
+  background-image:
+    linear-gradient(28deg, transparent 47%, rgb(255 255 255 / 70%) 48% 51%, transparent 52%),
+    linear-gradient(102deg, transparent 46%, rgb(152 89 108 / 16%) 47% 49%, transparent 50%),
+    linear-gradient(164deg, transparent 43%, rgb(255 255 255 / 60%) 44% 47%, transparent 48%),
+    linear-gradient(74deg, transparent 64%, rgb(152 89 108 / 13%) 65% 67%, transparent 68%);
+}
+
+.contact-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3rem;
+}
+
+.contact-link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
+@media (max-width: 639px) {
+  .nav-link {
+    font-size: 1.05rem;
+  }
 }
