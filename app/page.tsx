@@ -160,7 +160,7 @@ export default function App() {
 
           <figure className="relative z-10 mx-auto mt-8 w-[48vw] max-w-[220px] md:-mt-16 md:w-[43vw] md:max-w-[270px] md:min-w-[180px] lg:-mt-20">
             <img
-              className="relative -translate-x-10 md:translate-x-0 h-[44svh] min-h-[280px] max-h-[380px] w-full object-cover object-center md:h-[365px] md:min-h-0 md:max-h-none"
+              className="h-[44svh] min-h-[280px] max-h-[380px] w-full object-cover object-center md:h-[365px] md:min-h-0 md:max-h-none"
               src="/assets/heroramos1.png"
               alt="Florist holding an abundant bouquet"
             />
@@ -178,7 +178,7 @@ export default function App() {
           alt="A delicate seasonal bouquet"
         />
         <a
-          className="display-font absolute right-4 bottom-[35%] z-20 inline-flex items-center justify-center rounded-[0.35rem] bg-[#98596c] px-3 py-1.5 text-base leading-none text-white transition-transform hover:-translate-y-0.5 md:right-[10%] md:bottom-auto md:top-[342px] md:px-4 md:py-2 md:text-lg lg:right-[14%]"
+          className="display-font absolute right-45 bottom-[20%] z-20 inline-flex items-center justify-center rounded-[0.35rem] bg-[#98596c] px-3 py-1.5 text-base leading-none text-white transition-transform hover:-translate-y-0.5 md:right-[10%] md:bottom-auto md:top-[342px] md:px-4 md:py-2 md:text-lg lg:right-[14%]"
           href="tel:+13105550148"
         >
           Call us now!
