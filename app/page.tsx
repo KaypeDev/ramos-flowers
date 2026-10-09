@@ -177,12 +177,6 @@ export default function App() {
           src="/assets/heroramos3.png"
           alt="A delicate seasonal bouquet"
         />
-        <a
-          className="display-font absolute right-45 bottom-[20%] z-20 inline-flex items-center justify-center rounded-[0.35rem] bg-[#98596c] px-3 py-1.5 text-base leading-none text-white transition-transform hover:-translate-y-0.5 md:right-[10%] md:bottom-auto md:top-[342px] md:px-4 md:py-2 md:text-lg lg:right-[14%]"
-          href="tel:+13105550148"
-        >
-          Call us now!
-        </a>
       </section>
 
       <section
