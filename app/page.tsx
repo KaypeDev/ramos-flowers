@@ -160,7 +160,7 @@ export default function App() {
 
           <figure className="relative z-10 mx-auto mt-8 w-[48vw] max-w-[220px] md:-mt-16 md:w-[43vw] md:max-w-[270px] md:min-w-[180px] lg:-mt-20">
             <img
-              className="h-[44svh] min-h-[280px] max-h-[380px] w-full object-cover object-center md:h-[365px] md:min-h-0 md:max-h-none"
+              className="relative -translate-x-10 md:translate-x-0 h-[44svh] min-h-[280px] max-h-[380px] w-full object-cover object-center md:h-[365px] md:min-h-0 md:max-h-none"
               src="/assets/heroramos1.png"
               alt="Florist holding an abundant bouquet"
             />
@@ -168,17 +168,17 @@ export default function App() {
         </div>
 
         <img
-          className="absolute bottom-[15%] left-4 h-[24svh] max-h-[180px] w-[28vw] max-w-[120px] object-cover md:bottom-auto md:left-[4%] md:top-[230px] md:h-[180px] md:w-[145px] md:max-w-none lg:left-[7%]"
+          className="absolute bottom-[15%] left-4 hidden  h-[24svh] max-h-[180px] w-[28vw] max-w-[120px] object-cover md:bottom-auto md:left-[4%] md:top-[230px] md:block md:h-[180px] md:w-[145px] md:max-w-none lg:left-[7%]"
           src="/assets/heroramos2.png"
           alt="Flowers arranged in a florist studio"
         />
         <img
-          className="absolute right-4 bottom-[30%] h-[22svh] max-h-[165px] w-[26vw] max-w-[110px] object-cover md:right-[5%] md:bottom-auto md:top-[110px] md:h-[220px] md:w-[170px] md:max-w-none lg:right-[8%]"
+          className="absolute right-4 hidden bottom-[30%] h-[22svh] max-h-[165px] w-[26vw] max-w-[110px] object-cover md:right-[5%] md:bottom-auto md:top-[110px] md:block md:h-[220px] md:w-[170px] md:max-w-none lg:right-[8%]"
           src="/assets/heroramos3.png"
           alt="A delicate seasonal bouquet"
         />
         <a
-          className="display-font absolute right-4 bottom-[22%] z-20 inline-flex items-center justify-center rounded-[0.35rem] bg-[#98596c] px-3 py-1.5 text-base leading-none text-white transition-transform hover:-translate-y-0.5 md:right-[10%] md:bottom-auto md:top-[342px] md:px-4 md:py-2 md:text-lg lg:right-[14%]"
+          className="display-font absolute right-4 bottom-[35%] z-20 inline-flex items-center justify-center rounded-[0.35rem] bg-[#98596c] px-3 py-1.5 text-base leading-none text-white transition-transform hover:-translate-y-0.5 md:right-[10%] md:bottom-auto md:top-[342px] md:px-4 md:py-2 md:text-lg lg:right-[14%]"
           href="tel:+13105550148"
         >
           Call us now!
